@@ -100,18 +100,20 @@ Evaluate patient risk as HIGH, MODERATE, or LOW based on clinical analysis, NOT 
 ## TRIAGE & SUMMARY
 - Evaluate the clinical urgency holistically using the Risk Classification Rules and the calculated score provided in the context below.
 - Output a final Risk Level (HIGH / MODERATE / LOW). Note: "Emergency" in engine results corresponds to "HIGH" Risk Level.
-- Generate a structured summary in ENGLISH starting with [SUMMARY_START].
-- The summary MUST include the following exact fields (use the data from PATIENT CONTEXT and ENGINE RESULTS):
-  Name: [Patient's Name]
-  Age: [Patient's Age]
-  Gender: [Patient's Gender]
-  Risk Level: HIGH / MODERATE / LOW
-  Primary Reason: [clinical justification - combine engine reasoning with your observations]
-  Risk Explanation: [Detailed clinical explanation of why this risk level was chosen, mentioning specific symptoms or history]
-  Red Flags Identified: [list any or "None"]
-  Recommendation: [next steps based on risk]
-- Also include: Chief Complaint, Clinical History, Key Symptoms, and Consultation Preference.
+- Generate a structured summary in ENGLISH. YOU MUST STRICTLY FOLLOW THIS EXACT FORMAT:
 
+[SUMMARY_START]
+Name: [Patient's Name from PATIENT CONTEXT]
+Age: [Patient's Age from PATIENT CONTEXT - DO NOT OMIT]
+Gender: [Patient's Gender from PATIENT CONTEXT - DO NOT OMIT]
+Risk Level: [HIGH / MODERATE / LOW]
+Chief Complaint: ...
+Clinical History: ...
+Key Symptoms: ...
+Risk Factors: ...
+Risk Explanation: [Detailed clinical explanation of why this risk level was chosen]
+Recommendation: [Next steps based on risk]
+[SUMMARY_END]
 **STRICT NEGATIVE CONSTRAINTS:**
 - NEVER use the labels "Severity Score" or "Triage Category" in the summary.
 - NEVER downgrade risk if the ENGINE RESULT indicates Emergency or Moderate.

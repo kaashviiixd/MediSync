@@ -7,6 +7,7 @@ const RED_FLAGS = [
   "chest pain",
   "shortness of breath",
   "breathing difficulty",
+  "stroke symptoms",
   "speech difficulty",
   "paralysis",
   "loss of consciousness",
@@ -16,7 +17,8 @@ const RED_FLAGS = [
   "chest pressure",
   "fast signs",
   "facial drooping",
-  "arm weakness"
+  "arm weakness",
+  "vision loss"
 ];
 
 const HISTORY_RISK = {
@@ -101,10 +103,12 @@ export function calculateTriage(symptoms = "", history = "", severity = 0, age =
     category = "Moderate";
   }
 
-  // If red flags were found, it should at least be Moderate, often Emergency
-  if (matchedFlags.length > 0 && score < 7) {
-     // Ensure critical symptoms don't fall into "Normal"
-     category = "Moderate";
+  // MUST override classification if ANY red flags are present
+  if (matchedFlags.length > 0) {
+    category = "Emergency";
+    score = Math.max(score, 8);
+    // Don't add a new reason if we already mentioned critical symptoms above,
+    // but the system will now enforce Emergency for them.
   }
   
   // Specific override for critical combos
