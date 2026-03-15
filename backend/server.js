@@ -358,30 +358,49 @@ const documentAnalysisPrompt = `When analyzing uploaded document text:
 
 app.post('/api/chat', async (req, res) => {
   try {
-    const { message, conversationHistory, patientId, patientProfile } = req.body;
+    let { message, conversationHistory, patientId, patientProfile, sessionId } = req.body;
     if (!process.env.GROQ_API_KEY) {
       return res.status(500).json({ error: "GROQ_API_KEY is not configured." });
     }
 
-    let detectedLang = 'en';
-    if (translateClient && message && typeof message === 'string') {
-      try {
-        console.log(`MediSync: Detecting language for message: "${message.substring(0, 50)}..."`);
-        const [detection] = await translateClient.detect(message);
-        detectedLang = detection.language || 'en';
-        console.log(`MediSync: Detected user language code '${detectedLang}'`);
-      } catch (err) {
-        console.error("MediSync Language detection error:", err.message);
-      }
-    } else if (!translateClient) {
-      console.log("MediSync: skipping language detection (translateClient is null)");
-    }
-
-    // Save user message to DB (Optional: don't crash if it fails)
+    // Handle session creation/lookup
+    let session = null;
     if (patientId && patientId !== 'anonymous') {
       try {
+        // Verify user exists first to avoid foreign key violations
+        const userExists = await prisma.user.findUnique({ where: { id: patientId } });
+        
+        if (userExists) {
+          if (sessionId) {
+            session = await prisma.chatSession.findUnique({ where: { id: sessionId } });
+          }
+          
+          if (!session) {
+            const preview = message.substring(0, 30) + (message.length > 30 ? '...' : '');
+            session = await prisma.chatSession.create({
+              data: {
+                patientId,
+                title: preview || "New Conversation"
+              }
+            });
+            sessionId = session.id;
+          }
+        } else {
+          console.warn(`MediSync: User ${patientId} not found. Skipping session creation.`);
+          sessionId = null; // Don't try to link to a non-existent user
+        }
+      } catch (sessionErr) {
+        console.error("MediSync: Error handling chat session:", sessionErr.message);
+        // Continue without sessionId if DB fails
+        sessionId = null;
+      }
+    }
+
+    // Save user message to DB
+    if (patientId && patientId !== 'anonymous' && sessionId) {
+      try {
         await prisma.chatHistory.create({
-          data: { patientId, message, sender: 'user' }
+          data: { patientId, message, sender: 'user', sessionId }
         });
       } catch (dbErr) {
         console.warn("MediSync: Failed to save user message to history:", dbErr.message);
@@ -455,20 +474,52 @@ Reasoning: ${triageResult.reason}`;
     let aiResponseText = aiResponseTextRaw;
 
     // Save AI response to DB
-    if (patientId && patientId !== 'anonymous') {
+    if (patientId && patientId !== 'anonymous' && sessionId) {
       try {
         await prisma.chatHistory.create({
-          data: { patientId, message: aiResponseText, sender: 'ai' }
+          data: { patientId, message: aiResponseText, sender: 'ai', sessionId }
+        });
+
+        // Update session's updatedAt timestamp
+        await prisma.chatSession.update({
+          where: { id: sessionId },
+          data: { updatedAt: new Date() }
         });
       } catch (dbErr) {
         console.warn("MediSync: Failed to save AI response to history:", dbErr.message);
       }
     }
 
-    res.json({ reply: aiResponseText, buttons });
+    res.json({ reply: aiResponseText, buttons, sessionId });
   } catch (error) {
     console.error("Groq API error:", error);
     res.status(500).json({ error: "AI_SERVICE_ERROR", message: error.message });
+  }
+});
+
+app.get('/api/chat/sessions/:patientId', async (req, res) => {
+  try {
+    const { patientId } = req.params;
+    const sessions = await prisma.chatSession.findMany({
+      where: { patientId },
+      orderBy: { updatedAt: 'desc' }
+    });
+    res.json(sessions);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/chat/session/:sessionId', async (req, res) => {
+  try {
+    const { sessionId } = req.params;
+    const history = await prisma.chatHistory.findMany({
+      where: { sessionId },
+      orderBy: { timestamp: 'asc' }
+    });
+    res.json(history);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 });
 
@@ -966,6 +1017,7 @@ app.post('/api/appointments/book', async (req, res) => {
         patient_name: patient_name, 
         appointment_date: appointmentDate,
         appointment_time: appointmentTime,
+        appointment_type: req.body.appointmentType || 'Video Call',
         status: status || 'Scheduled',
         ai_generated_summary: ai_summary,
         severity_score: severityScore,

@@ -141,6 +141,7 @@ export default function DoctorDetail() {
       const successHandler = async (paymentResponse) => {
         console.log("MediSync: Finalizing booking data...");
         const aiSummary = localStorage.getItem('pending_medical_summary');
+        const appointmentType = localStorage.getItem('pending_appointment_type') || 'Video Call';
         const medicalRecords = JSON.parse(localStorage.getItem('pending_medical_records') || '[]');
         
         // Use the confirmed activeProfile from state
@@ -156,6 +157,7 @@ export default function DoctorDetail() {
             patient_name: patientName,
             appointmentDate: selectedDate,
             appointmentTime: selectedSlot,
+            appointmentType: appointmentType,
 
             status: 'Scheduled',
             ai_summary: aiSummary,
@@ -173,6 +175,7 @@ export default function DoctorDetail() {
           // Clear data after booking
           localStorage.removeItem('pending_medical_summary');
           localStorage.removeItem('pending_medical_records');
+          localStorage.removeItem('pending_appointment_type');
           localStorage.removeItem('medisync_chat_history');
 
           console.log("MediSync: Booking successful, redirecting...");

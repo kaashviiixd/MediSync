@@ -25,6 +25,7 @@ model User {
   appointments  Appointment[] @relation("PatientAppointments")
   doctorApps    Appointment[] @relation("DoctorAppointments")
   chatHistories ChatHistory[]
+  chatSessions  ChatSession[]
   documents     Document[]
   profiles      Profile[]
   
@@ -59,6 +60,7 @@ model Appointment {
   patient_name       String?
   appointment_date   String
   appointment_time   String
+  appointment_type   String   @default("Video Call") // Video Call, Offline Visit
   status             String   @default("pending") // pending, confirmed, completed, cancelled
   symptoms_summary   String?
   ai_generated_summary String?
@@ -86,10 +88,22 @@ model Profile {
   @@unique([userId, name])
 }
 
+model ChatSession {
+  id                String   @id @default(uuid())
+  patientId         String
+  patient           User     @relation(fields: [patientId], references: [id])
+  title             String?  @default("New Conversation")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  messages          ChatHistory[]
+}
+
 model ChatHistory {
   id                String   @id @default(uuid())
   patientId         String
   patient           User     @relation(fields: [patientId], references: [id])
+  sessionId         String?
+  session           ChatSession? @relation(fields: [sessionId], references: [id])
   message           String
   sender            String   // user, ai
   timestamp         DateTime @default(now())

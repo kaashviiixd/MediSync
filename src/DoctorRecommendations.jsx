@@ -146,7 +146,7 @@ export default function DoctorRecommendations() {
               </h2>
               <p className="text-slate-600 text-lg">
                 {isSearchingAll || selectedSlot
-                  ? `Showing results for "${searchQuery || selectedSlot}"`
+                  ? `Showing results for "${searchQuery || selectedSlot || 'All Specialists'}"`
                   : (recommendations?.reason || 'Based on your symptoms and medical history analysis.')}
               </p>
             </div>

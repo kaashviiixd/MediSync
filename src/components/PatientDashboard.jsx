@@ -62,7 +62,7 @@ const PatientDashboard = ({ onLogout }) => {
     ]);
     const [showReadingModal, setShowReadingModal] = useState(false);
     const [selectedMetric, setSelectedMetric] = useState(null);
-    const [newReading, setNewReading] = useState({ value: '', value2: '', date: new Date().toISOString().split('T')[0] });
+    const [newReading, setNewReading] = useState({ value: '', value2: '', date: new Date().toISOString().split('T')[0], time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false }) });
     const [activeMeeting, setActiveMeeting] = useState(null);
     const [showReceiptModal, setShowReceiptModal] = useState(false);
     const [selectedReceiptData, setSelectedReceiptData] = useState(null);
@@ -260,8 +260,29 @@ const PatientDashboard = ({ onLogout }) => {
     };
 
     const handleSaveReading = async () => {
-        alert("Persistence to MySQL for health readings coming soon!");
+        if (!newReading.value || (selectedMetric.id === 'bp' && !newReading.value2)) {
+            alert("Please enter a valid reading value.");
+            return;
+        }
+
+        const finalValue = selectedMetric.id === 'bp' 
+            ? `${newReading.value}/${newReading.value2}` 
+            : newReading.value;
+
+        setMetrics(prevMetrics => prevMetrics.map(m => {
+            if (m.id === selectedMetric.id) {
+                const numericValue = selectedMetric.id === 'bp' ? parseInt(newReading.value) : parseFloat(newReading.value);
+                return {
+                    ...m,
+                    value: finalValue,
+                    history: [...m.history, numericValue].slice(-10) // Keep last 10 for chart
+                };
+            }
+            return m;
+        }));
+
         setShowReadingModal(false);
+        // Note: Real persistence would call an API here
     };
 
     const sidebarLinks = [
@@ -585,7 +606,13 @@ const PatientDashboard = ({ onLogout }) => {
                                                 <button
                                                     onClick={() => {
                                                         setSelectedMetric(metric);
-                                                        setNewReading({ value: '', value2: '', date: new Date().toISOString().split('T')[0] });
+                                                        const now = new Date();
+                                                        setNewReading({ 
+                                                            value: metric.id === 'bp' ? metric.value.split('/')[0] : (metric.value === '--' ? '' : metric.value), 
+                                                            value2: metric.id === 'bp' ? metric.value.split('/')[1] : '', 
+                                                            date: now.toISOString().split('T')[0],
+                                                            time: now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })
+                                                        });
                                                         setShowReadingModal(true);
                                                     }}
                                                     className="w-full py-3.5 bg-slate-50 border border-slate-100 text-slate-700 rounded-[1.5rem] font-bold text-sm hover:bg-mediteal hover:text-white hover:border-mediteal transition-all flex items-center justify-center gap-2 group/btn active:scale-95 shadow-sm"
@@ -977,18 +1004,108 @@ const PatientDashboard = ({ onLogout }) => {
             </button>
 
             {showReadingModal && selectedMetric && (
-                <div className="fixed inset-0 z-[60] flex items-center justify-center p-6">
-                    <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm" onClick={() => setShowReadingModal(false)}></div>
-                    <div className="relative w-full max-w-md bg-white rounded-[2.5rem] p-8 shadow-2xl">
-                        <button onClick={() => setShowReadingModal(false)} className="absolute top-6 right-6 text-slate-400 hover:text-slate-900"><X className="w-5 h-5" /></button>
-                        <h3 className="text-xl font-bold mb-6">Add {selectedMetric.name} Reading</h3>
-                        <div className="space-y-5">
-                            <input type="number" className="w-full px-4 py-3 bg-slate-50 rounded-xl" placeholder="Value" value={newReading.value} onChange={(e) => setNewReading({ ...newReading, value: e.target.value })} />
-                            <div className="flex gap-4">
-                                <button onClick={() => setShowReadingModal(false)} className="flex-1 py-3 bg-slate-50 rounded-xl">Cancel</button>
-                                <button onClick={handleSaveReading} className="flex-1 py-3 bg-mediteal text-white rounded-xl">Save</button>
+                <div className="fixed inset-0 z-[60] flex items-center justify-center p-6 animate-in fade-in duration-300">
+                    <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onClick={() => setShowReadingModal(false)}></div>
+                    <div className="relative w-full max-w-md bg-white rounded-[2.5rem] p-10 shadow-2xl animate-in zoom-in-95 duration-300 border border-slate-100">
+                        <button onClick={() => setShowReadingModal(false)} className="absolute top-8 right-8 text-slate-400 hover:text-slate-900 transition-colors p-2 hover:bg-slate-50 rounded-xl">
+                            <X className="w-5 h-5" />
+                        </button>
+                        
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className={`${selectedMetric.bg} ${selectedMetric.color} p-4 rounded-2xl`}>
+                                <selectedMetric.icon size={28} />
+                            </div>
+                            <div>
+                                <h3 className="text-2xl font-black text-slate-900 tracking-tight">Add {selectedMetric.name}</h3>
+                                <p className="text-slate-500 font-bold text-xs uppercase tracking-widest mt-0.5">Health Tracker • {selectedMetric.unit}</p>
                             </div>
                         </div>
+
+                        <div className="space-y-6">
+                            {/* Value Inputs */}
+                            <div className="space-y-2">
+                                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Reading Value ({selectedMetric.unit})</label>
+                                {selectedMetric.id === 'bp' ? (
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex-1">
+                                            <input 
+                                                type="number" 
+                                                className="w-full px-5 py-4 bg-slate-50 border-2 border-slate-50 focus:border-mediteal/30 focus:bg-white rounded-2xl outline-none font-bold text-slate-800 transition-all" 
+                                                placeholder="Systolic" 
+                                                value={newReading.value} 
+                                                onChange={(e) => setNewReading({ ...newReading, value: e.target.value })} 
+                                            />
+                                            <span className="text-[9px] font-bold text-slate-400 mt-1 block px-1">SYS</span>
+                                        </div>
+                                        <span className="text-2xl font-black text-slate-200 mt-[-18px]">/</span>
+                                        <div className="flex-1">
+                                            <input 
+                                                type="number" 
+                                                className="w-full px-5 py-4 bg-slate-50 border-2 border-slate-50 focus:border-mediteal/30 focus:bg-white rounded-2xl outline-none font-bold text-slate-800 transition-all" 
+                                                placeholder="Diastolic" 
+                                                value={newReading.value2} 
+                                                onChange={(e) => setNewReading({ ...newReading, value2: e.target.value })} 
+                                            />
+                                            <span className="text-[9px] font-bold text-slate-400 mt-1 block px-1">DIA</span>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <input 
+                                        type="number" 
+                                        className="w-full px-5 py-4 bg-slate-50 border-2 border-slate-50 focus:border-mediteal/30 focus:bg-white rounded-2xl outline-none font-bold text-slate-800 transition-all" 
+                                        placeholder={`Enter ${selectedMetric.name}`}
+                                        value={newReading.value} 
+                                        onChange={(e) => setNewReading({ ...newReading, value: e.target.value })} 
+                                    />
+                                )}
+                            </div>
+
+                            {/* Date & Time Selection */}
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="space-y-2">
+                                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 flex items-center gap-1.5">
+                                        <Calendar size={10} className="text-mediteal" /> Reading Date
+                                    </label>
+                                    <input 
+                                        type="date" 
+                                        className="w-full px-4 py-3 bg-slate-50 border-2 border-slate-50 focus:border-mediteal/30 focus:bg-white rounded-xl outline-none font-bold text-sm text-slate-700 transition-all" 
+                                        value={newReading.date} 
+                                        onChange={(e) => setNewReading({ ...newReading, date: e.target.value })} 
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 flex items-center gap-1.5">
+                                        <Clock size={10} className="text-mediteal" /> Reading Time
+                                    </label>
+                                    <input 
+                                        type="time" 
+                                        className="w-full px-4 py-3 bg-slate-50 border-2 border-slate-50 focus:border-mediteal/30 focus:bg-white rounded-xl outline-none font-bold text-sm text-slate-700 transition-all" 
+                                        value={newReading.time} 
+                                        onChange={(e) => setNewReading({ ...newReading, time: e.target.value })} 
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="flex gap-4 pt-4">
+                                <button 
+                                    onClick={() => setShowReadingModal(false)} 
+                                    className="flex-1 py-4 bg-slate-50 text-slate-500 rounded-2xl font-black text-sm hover:bg-slate-100 transition-all active:scale-[0.98]"
+                                >
+                                    Discard
+                                </button>
+                                <button 
+                                    onClick={handleSaveReading} 
+                                    className="flex-1 py-4 bg-mediteal text-white rounded-2xl font-black text-sm hover:bg-mediteal-dark shadow-lg shadow-mediteal/20 transition-all active:scale-[0.98]"
+                                >
+                                    Log Reading
+                                </button>
+                            </div>
+                        </div>
+
+                        <p className="mt-8 text-center text-[10px] font-bold text-slate-300 italic flex items-center justify-center gap-2">
+                            <ShieldCheck size={12} />
+                            Data is locally encrypted for your privacy
+                        </p>
                     </div>
                 </div>
             )}

@@ -160,7 +160,7 @@ const DoctorMeetingRoom = ({ roomId: propRoomId, appointment: propAppointment, o
     };
 
     return (
-        <div className="flex h-full bg-slate-50 overflow-hidden font-sans relative">
+        <div className="flex h-screen bg-slate-50 overflow-hidden font-sans relative">
             {/* Jitsi Section (LEFT) */}
             <div className="flex-1 relative bg-black">
                 <div ref={jitsiContainerRef} className="w-full h-full" />
