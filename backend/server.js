@@ -580,26 +580,37 @@ app.post('/api/upload', upload.single('document'), async (req, res) => {
          const pdfData = await pdfParse(fileBuffer);
          documentText = pdfData.text;
        } catch (pdfErr) {
-         console.warn("MediSync: pdf-parse failed. Attempting fallback with pdf2json...");
-         try {
-           documentText = await new Promise((resolve, reject) => {
-             const pdfParser = new PDFParser(this, 1);
-             pdfParser.on("pdfParser_dataError", errData => reject(errData.parserError));
-             pdfParser.on("pdfParser_dataReady", pdfData => resolve(pdfParser.getRawTextContent()));
-             pdfParser.parseBuffer(fileBuffer);
-           });
-         } catch (fallbackErr) {
-           console.warn("MediSync: pdf2json fallback failed. Attempting final fallback with pdfreader...");
-           documentText = await new Promise((resolve, reject) => {
-             let extracted = "";
-             new PdfReader().parseBuffer(fileBuffer, (err, item) => {
-               if (err) reject(err);
-               else if (!item) resolve(extracted);
-               else if (item.text) extracted += item.text + " ";
+           console.warn("MediSync: pdf-parse failed. Attempting fallback with pdf2json...");
+           try {
+             documentText = await new Promise((resolve, reject) => {
+               const pdfParser = new PDFParser(this, 1);
+               pdfParser.on("pdfParser_dataError", errData => {
+                 console.warn("MediSync: pdf2json error:", errData.parserError);
+                 reject(errData.parserError);
+               });
+               pdfParser.on("pdfParser_dataReady", pdfData => resolve(pdfParser.getRawTextContent()));
+               pdfParser.parseBuffer(fileBuffer);
              });
-           });
+           } catch (fallbackErr) {
+             console.warn("MediSync: pdf2json fallback failed. Attempting final fallback with pdfreader...");
+             try {
+               documentText = await new Promise((resolve, reject) => {
+                 let extracted = "";
+                 new PdfReader().parseBuffer(fileBuffer, (err, item) => {
+                   if (err) {
+                     console.warn("MediSync: pdfreader error:", err);
+                     reject(err);
+                   }
+                   else if (!item) resolve(extracted);
+                   else if (item.text) extracted += item.text + " ";
+                 });
+               });
+             } catch (finalFallbackErr) {
+               console.error("MediSync: All PDF parsing fallbacks failed.");
+               documentText = "Document could not be parsed: PDF parsing failed.";
+             }
+           }
          }
-       }
     } else if (file.mimetype.includes('wordprocessingml') || file.originalname.endsWith('.docx')) {
        const result = await mammoth.extractRawText({ buffer: fileBuffer });
        documentText = result.value;

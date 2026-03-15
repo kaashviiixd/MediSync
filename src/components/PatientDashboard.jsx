@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { appointmentApi, recordApi, doctorApi } from '../lib/api';
 import { socket, connectSocket } from '../lib/socket';
@@ -67,6 +67,52 @@ const PatientDashboard = ({ onLogout }) => {
     const [showReceiptModal, setShowReceiptModal] = useState(false);
     const [selectedReceiptData, setSelectedReceiptData] = useState(null);
     const [allDoctors, setAllDoctors] = useState([]);
+    const fileInputRef = useRef(null);
+
+    const fetchMedicalRecords = async () => {
+        const savedUser = localStorage.getItem('medisync_user');
+        if (!savedUser) return;
+        const u = JSON.parse(savedUser);
+        try {
+            const res = await recordApi.getPatientDocuments(u.id);
+            setMedicalRecords(res.data.map(doc => ({
+                name: doc.name,
+                date: new Date(doc.upload_date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
+                type: doc.document_type || 'Record',
+                fileUrl: doc.file_url
+            })));
+        } catch (err) {
+            console.error("Failed to fetch medical records:", err);
+        }
+    };
+
+    const handleFileUpload = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const savedUser = localStorage.getItem('medisync_user');
+        if (!savedUser) {
+            alert("You must be logged in to upload records.");
+            return;
+        }
+        const u = JSON.parse(savedUser);
+
+        const formData = new FormData();
+        formData.append('document', file);
+        formData.append('patientId', u.id);
+        
+        // Match the expected backend req.body structure
+        formData.append('patientProfile', JSON.stringify(u));
+
+        try {
+            await recordApi.uploadDocument(formData);
+            alert("Record uploaded successfully!");
+            fetchMedicalRecords(); // Refresh the list
+        } catch (err) {
+            console.error("Upload failed:", err);
+            alert("Failed to upload record. Please try again.");
+        }
+    };
 
     // Fetch all doctors on mount (handled in main useEffect below)
 
@@ -172,19 +218,6 @@ const PatientDashboard = ({ onLogout }) => {
             };
             fetchAppointments();
 
-            const fetchMedicalRecords = async () => {
-                try {
-                    const res = await recordApi.getPatientDocuments(u.id);
-                    setMedicalRecords(res.data.map(doc => ({
-                        name: doc.name,
-                        date: new Date(doc.upload_date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
-                        type: doc.document_type || 'Record',
-                        fileUrl: doc.file_url
-                    })));
-                } catch (err) {
-                    console.error("Failed to fetch medical records:", err);
-                }
-            };
             fetchMedicalRecords();
 
             const fetchAllDoctors = async () => {
@@ -800,9 +833,21 @@ const PatientDashboard = ({ onLogout }) => {
                                         <div id="medical-records" className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 scroll-mt-24">
                                             <div className="flex items-center justify-between mb-8">
                                                 <h3 className="text-xl font-bold text-slate-900">Medical Records</h3>
-                                                <button className="flex items-center gap-2 px-5 py-2.5 bg-mediteal text-white rounded-2xl font-bold text-sm hover:bg-mediteal-dark shadow-lg shadow-mediteal/20 transition-all">
-                                                    <Plus className="w-4 h-4" /> Upload New
-                                                </button>
+                                                <div>
+                                                    <input
+                                                        type="file"
+                                                        ref={fileInputRef}
+                                                        onChange={handleFileUpload}
+                                                        className="hidden"
+                                                        accept=".pdf,.png,.jpg,.jpeg,.doc,.docx"
+                                                    />
+                                                    <button 
+                                                        onClick={() => fileInputRef.current?.click()}
+                                                        className="flex items-center gap-2 px-5 py-2.5 bg-mediteal text-white rounded-2xl font-bold text-sm hover:bg-mediteal-dark shadow-lg shadow-mediteal/20 transition-all"
+                                                    >
+                                                        <Plus className="w-4 h-4" /> Upload New
+                                                    </button>
+                                                </div>
                                             </div>
                                             <div className="space-y-4">
                                                 {medicalRecords.length > 0 ? medicalRecords.map((record, i) => (
