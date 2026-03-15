@@ -1,0 +1,4041 @@
+[
+  {
+    "id": "CASE_001",
+    "age": 49,
+    "gender": "Male",
+    "symptoms": "fever",
+    "reported_severity": 8,
+    "past_history": "asthma, diabetes",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_002",
+    "age": 11,
+    "gender": "Female",
+    "symptoms": "runny nose, sore throat",
+    "reported_severity": 2,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_003",
+    "age": 61,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling",
+    "reported_severity": 10,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_004",
+    "age": 33,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling",
+    "reported_severity": 2,
+    "past_history": "diabetes, diabetes",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_005",
+    "age": 79,
+    "gender": "Male",
+    "symptoms": "sneezing, seasonal allergies, sore throat",
+    "reported_severity": 5,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_006",
+    "age": 77,
+    "gender": "Male",
+    "symptoms": "sneezing",
+    "reported_severity": 4,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_007",
+    "age": 43,
+    "gender": "Female",
+    "symptoms": "runny nose, sneezing, seasonal allergies",
+    "reported_severity": 10,
+    "past_history": "none, none",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_008",
+    "age": 30,
+    "gender": "Female",
+    "symptoms": "loss of consciousness, weakness in right arm",
+    "reported_severity": 6,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_009",
+    "age": 85,
+    "gender": "Male",
+    "symptoms": "moderate dehydration, persistent cough, seasonal allergies",
+    "reported_severity": 2,
+    "past_history": "asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_010",
+    "age": 53,
+    "gender": "Female",
+    "symptoms": "abdominal pain, headache, persistent cough",
+    "reported_severity": 1,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_011",
+    "age": 21,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, headache, moderate dehydration",
+    "reported_severity": 8,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_012",
+    "age": 83,
+    "gender": "Female",
+    "symptoms": "sneezing, seasonal allergies",
+    "reported_severity": 6,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_013",
+    "age": 6,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, headache",
+    "reported_severity": 9,
+    "past_history": "hypertension, stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_014",
+    "age": 57,
+    "gender": "Female",
+    "symptoms": "persistent cough, headache",
+    "reported_severity": 7,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_015",
+    "age": 36,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, moderate dehydration",
+    "reported_severity": 6,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_016",
+    "age": 59,
+    "gender": "Female",
+    "symptoms": "sore throat",
+    "reported_severity": 2,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_017",
+    "age": 6,
+    "gender": "Male",
+    "symptoms": "headache, moderate dehydration, fever, sneezing",
+    "reported_severity": 8,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_018",
+    "age": 79,
+    "gender": "Female",
+    "symptoms": "fever, moderate dehydration",
+    "reported_severity": 5,
+    "past_history": "smoker, asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_019",
+    "age": 79,
+    "gender": "Male",
+    "symptoms": "fever, headache, moderate dehydration, mild headache",
+    "reported_severity": 7,
+    "past_history": "asthma, asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_020",
+    "age": 8,
+    "gender": "Female",
+    "symptoms": "headache, fever",
+    "reported_severity": 6,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_021",
+    "age": 65,
+    "gender": "Female",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 9,
+    "past_history": "hypertension, seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_022",
+    "age": 66,
+    "gender": "Female",
+    "symptoms": "sore throat, runny nose",
+    "reported_severity": 6,
+    "past_history": "hypertension, diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_023",
+    "age": 45,
+    "gender": "Female",
+    "symptoms": "sore throat, sneezing",
+    "reported_severity": 7,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_024",
+    "age": 74,
+    "gender": "Male",
+    "symptoms": "mild headache, minor cut",
+    "reported_severity": 3,
+    "past_history": "seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_025",
+    "age": 53,
+    "gender": "Female",
+    "symptoms": "headache, fever",
+    "reported_severity": 7,
+    "past_history": "seasonal allergies, diabetes",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_026",
+    "age": 41,
+    "gender": "Male",
+    "symptoms": "runny nose, sore throat, mild headache, persistent cough",
+    "reported_severity": 8,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_027",
+    "age": 78,
+    "gender": "Female",
+    "symptoms": "fever",
+    "reported_severity": 7,
+    "past_history": "asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_028",
+    "age": 36,
+    "gender": "Female",
+    "symptoms": "headache, minor injury with swelling, persistent vomiting",
+    "reported_severity": 10,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_029",
+    "age": 15,
+    "gender": "Male",
+    "symptoms": "seasonal allergies, runny nose",
+    "reported_severity": 3,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_030",
+    "age": 45,
+    "gender": "Male",
+    "symptoms": "mild headache",
+    "reported_severity": 9,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_031",
+    "age": 30,
+    "gender": "Female",
+    "symptoms": "minor injury with swelling, persistent cough",
+    "reported_severity": 1,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_032",
+    "age": 82,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, sneezing",
+    "reported_severity": 1,
+    "past_history": "smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_033",
+    "age": 7,
+    "gender": "Female",
+    "symptoms": "fever, minor injury with swelling",
+    "reported_severity": 6,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_034",
+    "age": 83,
+    "gender": "Female",
+    "symptoms": "fever, headache",
+    "reported_severity": 5,
+    "past_history": "none",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_035",
+    "age": 34,
+    "gender": "Female",
+    "symptoms": "abdominal pain, headache, moderate dehydration, moderate dehydration",
+    "reported_severity": 5,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_036",
+    "age": 43,
+    "gender": "Male",
+    "symptoms": "mild headache, minor cut",
+    "reported_severity": 10,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_037",
+    "age": 34,
+    "gender": "Female",
+    "symptoms": "seasonal allergies, runny nose, mild headache",
+    "reported_severity": 3,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_038",
+    "age": 50,
+    "gender": "Male",
+    "symptoms": "runny nose, sore throat",
+    "reported_severity": 4,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_039",
+    "age": 35,
+    "gender": "Female",
+    "symptoms": "minor cut, mild headache",
+    "reported_severity": 5,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_040",
+    "age": 44,
+    "gender": "Female",
+    "symptoms": "weakness in right arm, chest pain",
+    "reported_severity": 5,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Respiratory distress requires urgent evaluation"
+  },
+  {
+    "id": "CASE_041",
+    "age": 62,
+    "gender": "Male",
+    "symptoms": "seasonal allergies, mild headache, minor cut, moderate dehydration",
+    "reported_severity": 7,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_042",
+    "age": 59,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, fever, headache",
+    "reported_severity": 9,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_043",
+    "age": 55,
+    "gender": "Female",
+    "symptoms": "sore throat, mild headache, persistent cough",
+    "reported_severity": 6,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_044",
+    "age": 17,
+    "gender": "Female",
+    "symptoms": "abdominal pain, persistent vomiting, fever",
+    "reported_severity": 5,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_045",
+    "age": 47,
+    "gender": "Male",
+    "symptoms": "fever, fever",
+    "reported_severity": 10,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_046",
+    "age": 33,
+    "gender": "Female",
+    "symptoms": "minor cut",
+    "reported_severity": 8,
+    "past_history": "diabetes, diabetes",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_047",
+    "age": 70,
+    "gender": "Male",
+    "symptoms": "abdominal pain",
+    "reported_severity": 6,
+    "past_history": "smoker, diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_048",
+    "age": 13,
+    "gender": "Female",
+    "symptoms": "abdominal pain",
+    "reported_severity": 2,
+    "past_history": "diabetes, seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_049",
+    "age": 60,
+    "gender": "Female",
+    "symptoms": "chest pain, loss of consciousness, weakness in right arm",
+    "reported_severity": 2,
+    "past_history": "diabetes, none",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_050",
+    "age": 62,
+    "gender": "Male",
+    "symptoms": "sudden speech difficulty, severe bleeding",
+    "reported_severity": 7,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Respiratory distress requires urgent evaluation"
+  },
+  {
+    "id": "CASE_051",
+    "age": 41,
+    "gender": "Female",
+    "symptoms": "severe bleeding",
+    "reported_severity": 9,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_052",
+    "age": 84,
+    "gender": "Female",
+    "symptoms": "persistent vomiting, persistent cough, headache",
+    "reported_severity": 1,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_053",
+    "age": 12,
+    "gender": "Male",
+    "symptoms": "sneezing, sore throat",
+    "reported_severity": 3,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_054",
+    "age": 27,
+    "gender": "Male",
+    "symptoms": "shortness of breath",
+    "reported_severity": 6,
+    "past_history": "hypertension, heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "respiratory risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_055",
+    "age": 51,
+    "gender": "Male",
+    "symptoms": "moderate dehydration",
+    "reported_severity": 9,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_056",
+    "age": 35,
+    "gender": "Male",
+    "symptoms": "fever, minor injury with swelling",
+    "reported_severity": 1,
+    "past_history": "smoker, hypertension",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_057",
+    "age": 60,
+    "gender": "Female",
+    "symptoms": "abdominal pain, headache, fever",
+    "reported_severity": 4,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_058",
+    "age": 50,
+    "gender": "Male",
+    "symptoms": "runny nose",
+    "reported_severity": 1,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_059",
+    "age": 18,
+    "gender": "Male",
+    "symptoms": "seasonal allergies, minor cut, persistent vomiting",
+    "reported_severity": 8,
+    "past_history": "hypertension, hypertension",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_060",
+    "age": 75,
+    "gender": "Male",
+    "symptoms": "sore throat, minor cut",
+    "reported_severity": 6,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_061",
+    "age": 47,
+    "gender": "Female",
+    "symptoms": "persistent vomiting, persistent cough",
+    "reported_severity": 8,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_062",
+    "age": 13,
+    "gender": "Female",
+    "symptoms": "severe bleeding, seasonal allergies",
+    "reported_severity": 1,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_063",
+    "age": 13,
+    "gender": "Female",
+    "symptoms": "minor cut, mild headache, sore throat",
+    "reported_severity": 6,
+    "past_history": "hypertension, seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_064",
+    "age": 36,
+    "gender": "Male",
+    "symptoms": "runny nose, sneezing",
+    "reported_severity": 8,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_065",
+    "age": 68,
+    "gender": "Male",
+    "symptoms": "fever",
+    "reported_severity": 6,
+    "past_history": "diabetes, diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_066",
+    "age": 64,
+    "gender": "Female",
+    "symptoms": "headache",
+    "reported_severity": 9,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_067",
+    "age": 83,
+    "gender": "Male",
+    "symptoms": "mild headache, seasonal allergies, sore throat",
+    "reported_severity": 4,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_068",
+    "age": 76,
+    "gender": "Female",
+    "symptoms": "paralysis, chest pain",
+    "reported_severity": 4,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_069",
+    "age": 44,
+    "gender": "Male",
+    "symptoms": "headache, moderate dehydration",
+    "reported_severity": 3,
+    "past_history": "smoker, hypertension",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_070",
+    "age": 33,
+    "gender": "Female",
+    "symptoms": "headache",
+    "reported_severity": 3,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_071",
+    "age": 76,
+    "gender": "Male",
+    "symptoms": "fever, persistent cough, moderate dehydration",
+    "reported_severity": 10,
+    "past_history": "diabetes, stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_072",
+    "age": 35,
+    "gender": "Female",
+    "symptoms": "headache, moderate dehydration",
+    "reported_severity": 5,
+    "past_history": "diabetes, asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_073",
+    "age": 44,
+    "gender": "Female",
+    "symptoms": "minor cut, sneezing",
+    "reported_severity": 3,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_074",
+    "age": 83,
+    "gender": "Male",
+    "symptoms": "runny nose",
+    "reported_severity": 4,
+    "past_history": "none",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_075",
+    "age": 79,
+    "gender": "Male",
+    "symptoms": "mild headache",
+    "reported_severity": 7,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_076",
+    "age": 62,
+    "gender": "Female",
+    "symptoms": "sore throat, runny nose, seasonal allergies",
+    "reported_severity": 10,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_077",
+    "age": 78,
+    "gender": "Female",
+    "symptoms": "abdominal pain, fever, persistent cough",
+    "reported_severity": 7,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_078",
+    "age": 75,
+    "gender": "Female",
+    "symptoms": "minor cut, runny nose",
+    "reported_severity": 5,
+    "past_history": "asthma, smoker",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_079",
+    "age": 19,
+    "gender": "Female",
+    "symptoms": "minor cut",
+    "reported_severity": 10,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_080",
+    "age": 76,
+    "gender": "Male",
+    "symptoms": "seasonal allergies, sneezing, sore throat",
+    "reported_severity": 5,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_081",
+    "age": 33,
+    "gender": "Male",
+    "symptoms": "persistent vomiting, moderate dehydration, headache",
+    "reported_severity": 3,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_082",
+    "age": 71,
+    "gender": "Male",
+    "symptoms": "sneezing, seasonal allergies",
+    "reported_severity": 9,
+    "past_history": "smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_083",
+    "age": 66,
+    "gender": "Female",
+    "symptoms": "mild headache",
+    "reported_severity": 2,
+    "past_history": "none",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_084",
+    "age": 44,
+    "gender": "Female",
+    "symptoms": "headache",
+    "reported_severity": 2,
+    "past_history": "heart disease, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_085",
+    "age": 46,
+    "gender": "Female",
+    "symptoms": "sneezing",
+    "reported_severity": 3,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_086",
+    "age": 24,
+    "gender": "Male",
+    "symptoms": "sore throat",
+    "reported_severity": 5,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_087",
+    "age": 38,
+    "gender": "Female",
+    "symptoms": "sudden speech difficulty, paralysis, shortness of breath",
+    "reported_severity": 4,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "stroke risk",
+      "respiratory risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_088",
+    "age": 11,
+    "gender": "Male",
+    "symptoms": "sneezing",
+    "reported_severity": 9,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_089",
+    "age": 84,
+    "gender": "Female",
+    "symptoms": "sneezing, runny nose, seasonal allergies",
+    "reported_severity": 3,
+    "past_history": "seasonal allergies, smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_090",
+    "age": 68,
+    "gender": "Female",
+    "symptoms": "fever, abdominal pain, headache",
+    "reported_severity": 10,
+    "past_history": "heart disease, heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_091",
+    "age": 74,
+    "gender": "Female",
+    "symptoms": "mild headache, sneezing, seasonal allergies",
+    "reported_severity": 9,
+    "past_history": "smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_092",
+    "age": 52,
+    "gender": "Female",
+    "symptoms": "persistent cough, fever",
+    "reported_severity": 4,
+    "past_history": "smoker, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_093",
+    "age": 72,
+    "gender": "Female",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 2,
+    "past_history": "none, smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_094",
+    "age": 29,
+    "gender": "Female",
+    "symptoms": "mild headache, runny nose",
+    "reported_severity": 1,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_095",
+    "age": 64,
+    "gender": "Male",
+    "symptoms": "sudden speech difficulty, fever",
+    "reported_severity": 1,
+    "past_history": "none, none",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_096",
+    "age": 12,
+    "gender": "Male",
+    "symptoms": "seasonal allergies, mild headache, sneezing",
+    "reported_severity": 3,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_097",
+    "age": 73,
+    "gender": "Female",
+    "symptoms": "mild headache, sneezing, seasonal allergies, mild headache",
+    "reported_severity": 5,
+    "past_history": "diabetes, seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_098",
+    "age": 71,
+    "gender": "Male",
+    "symptoms": "abdominal pain",
+    "reported_severity": 3,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_099",
+    "age": 6,
+    "gender": "Male",
+    "symptoms": "chest pressure, paralysis",
+    "reported_severity": 8,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_100",
+    "age": 60,
+    "gender": "Female",
+    "symptoms": "minor cut, sneezing, seasonal allergies, persistent cough",
+    "reported_severity": 8,
+    "past_history": "none, asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_101",
+    "age": 6,
+    "gender": "Male",
+    "symptoms": "allergic swelling, shortness of breath",
+    "reported_severity": 4,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_102",
+    "age": 33,
+    "gender": "Female",
+    "symptoms": "sneezing",
+    "reported_severity": 1,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_103",
+    "age": 30,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling",
+    "reported_severity": 4,
+    "past_history": "smoker, smoker",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_104",
+    "age": 74,
+    "gender": "Male",
+    "symptoms": "abdominal pain, fever, minor injury with swelling",
+    "reported_severity": 3,
+    "past_history": "asthma, diabetes",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_105",
+    "age": 77,
+    "gender": "Female",
+    "symptoms": "chest pain, paralysis",
+    "reported_severity": 3,
+    "past_history": "hypertension, hypertension",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_106",
+    "age": 47,
+    "gender": "Male",
+    "symptoms": "paralysis, loss of consciousness",
+    "reported_severity": 8,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_107",
+    "age": 57,
+    "gender": "Female",
+    "symptoms": "abdominal pain, moderate dehydration, headache",
+    "reported_severity": 9,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_108",
+    "age": 24,
+    "gender": "Male",
+    "symptoms": "chest pain",
+    "reported_severity": 5,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "cardiac risk",
+      "stroke risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_109",
+    "age": 79,
+    "gender": "Male",
+    "symptoms": "abdominal pain",
+    "reported_severity": 10,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_110",
+    "age": 52,
+    "gender": "Female",
+    "symptoms": "sneezing, seasonal allergies, sore throat",
+    "reported_severity": 3,
+    "past_history": "hypertension, stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_111",
+    "age": 78,
+    "gender": "Female",
+    "symptoms": "shortness of breath, sudden speech difficulty, chest pain",
+    "reported_severity": 10,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly",
+      "stroke risk",
+      "respiratory risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_112",
+    "age": 67,
+    "gender": "Male",
+    "symptoms": "fever, minor injury with swelling, moderate dehydration",
+    "reported_severity": 7,
+    "past_history": "seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_113",
+    "age": 84,
+    "gender": "Female",
+    "symptoms": "minor cut, mild headache",
+    "reported_severity": 5,
+    "past_history": "hypertension, heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_114",
+    "age": 13,
+    "gender": "Male",
+    "symptoms": "moderate dehydration, persistent cough",
+    "reported_severity": 5,
+    "past_history": "hypertension, hypertension",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_115",
+    "age": 27,
+    "gender": "Male",
+    "symptoms": "minor cut, sneezing",
+    "reported_severity": 8,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_116",
+    "age": 18,
+    "gender": "Male",
+    "symptoms": "sneezing, seasonal allergies",
+    "reported_severity": 7,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_117",
+    "age": 13,
+    "gender": "Male",
+    "symptoms": "persistent vomiting, fever, abdominal pain",
+    "reported_severity": 9,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_118",
+    "age": 19,
+    "gender": "Male",
+    "symptoms": "minor cut, mild headache, runny nose, seasonal allergies",
+    "reported_severity": 9,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_119",
+    "age": 80,
+    "gender": "Male",
+    "symptoms": "moderate dehydration",
+    "reported_severity": 5,
+    "past_history": "hypertension, diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_120",
+    "age": 63,
+    "gender": "Female",
+    "symptoms": "runny nose, minor cut, sore throat, moderate dehydration",
+    "reported_severity": 9,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_121",
+    "age": 66,
+    "gender": "Female",
+    "symptoms": "loss of consciousness, sudden speech difficulty, allergic swelling, abdominal pain",
+    "reported_severity": 2,
+    "past_history": "none, smoker",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Possible stroke symptoms detected"
+  },
+  {
+    "id": "CASE_122",
+    "age": 17,
+    "gender": "Female",
+    "symptoms": "runny nose, minor cut",
+    "reported_severity": 9,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_123",
+    "age": 62,
+    "gender": "Male",
+    "symptoms": "persistent cough, mild headache",
+    "reported_severity": 9,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_124",
+    "age": 54,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, fever",
+    "reported_severity": 7,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_125",
+    "age": 22,
+    "gender": "Male",
+    "symptoms": "minor cut, mild headache",
+    "reported_severity": 3,
+    "past_history": "heart disease, diabetes",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_126",
+    "age": 78,
+    "gender": "Male",
+    "symptoms": "moderate dehydration, fever",
+    "reported_severity": 4,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_127",
+    "age": 83,
+    "gender": "Female",
+    "symptoms": "chest pressure",
+    "reported_severity": 6,
+    "past_history": "none",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_128",
+    "age": 51,
+    "gender": "Female",
+    "symptoms": "headache, minor injury with swelling, abdominal pain",
+    "reported_severity": 9,
+    "past_history": "hypertension, hypertension",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_129",
+    "age": 71,
+    "gender": "Male",
+    "symptoms": "minor cut",
+    "reported_severity": 5,
+    "past_history": "none",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_130",
+    "age": 72,
+    "gender": "Female",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 3,
+    "past_history": "asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_131",
+    "age": 45,
+    "gender": "Male",
+    "symptoms": "severe bleeding, shortness of breath, weakness in right arm",
+    "reported_severity": 8,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "respiratory risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Respiratory distress requires urgent evaluation"
+  },
+  {
+    "id": "CASE_132",
+    "age": 71,
+    "gender": "Female",
+    "symptoms": "weakness in right arm, loss of consciousness, sudden speech difficulty",
+    "reported_severity": 8,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_133",
+    "age": 52,
+    "gender": "Female",
+    "symptoms": "fever, persistent vomiting",
+    "reported_severity": 7,
+    "past_history": "diabetes, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_134",
+    "age": 69,
+    "gender": "Male",
+    "symptoms": "minor cut, mild headache",
+    "reported_severity": 6,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_135",
+    "age": 54,
+    "gender": "Female",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 10,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_136",
+    "age": 64,
+    "gender": "Female",
+    "symptoms": "moderate dehydration",
+    "reported_severity": 9,
+    "past_history": "hypertension, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_137",
+    "age": 9,
+    "gender": "Male",
+    "symptoms": "sneezing",
+    "reported_severity": 10,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_138",
+    "age": 43,
+    "gender": "Female",
+    "symptoms": "fever, minor injury with swelling, persistent vomiting",
+    "reported_severity": 7,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_139",
+    "age": 30,
+    "gender": "Male",
+    "symptoms": "sneezing, seasonal allergies",
+    "reported_severity": 8,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_140",
+    "age": 16,
+    "gender": "Male",
+    "symptoms": "sneezing",
+    "reported_severity": 9,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_141",
+    "age": 47,
+    "gender": "Female",
+    "symptoms": "sore throat, sneezing",
+    "reported_severity": 1,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_142",
+    "age": 40,
+    "gender": "Female",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 4,
+    "past_history": "seasonal allergies, smoker",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_143",
+    "age": 14,
+    "gender": "Female",
+    "symptoms": "severe bleeding, loss of consciousness",
+    "reported_severity": 5,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_144",
+    "age": 28,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, fever, headache",
+    "reported_severity": 2,
+    "past_history": "stroke history, seasonal allergies",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_145",
+    "age": 57,
+    "gender": "Female",
+    "symptoms": "chest pressure, allergic swelling",
+    "reported_severity": 3,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_146",
+    "age": 12,
+    "gender": "Male",
+    "symptoms": "allergic swelling, sudden speech difficulty, paralysis",
+    "reported_severity": 2,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_147",
+    "age": 30,
+    "gender": "Female",
+    "symptoms": "weakness in right arm, severe bleeding",
+    "reported_severity": 9,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_148",
+    "age": 28,
+    "gender": "Male",
+    "symptoms": "runny nose, seasonal allergies, sore throat",
+    "reported_severity": 2,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_149",
+    "age": 26,
+    "gender": "Female",
+    "symptoms": "persistent vomiting, fever, abdominal pain",
+    "reported_severity": 4,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_150",
+    "age": 72,
+    "gender": "Female",
+    "symptoms": "runny nose, seasonal allergies, seasonal allergies",
+    "reported_severity": 5,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_151",
+    "age": 85,
+    "gender": "Female",
+    "symptoms": "headache",
+    "reported_severity": 3,
+    "past_history": "heart disease, seasonal allergies",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_152",
+    "age": 10,
+    "gender": "Female",
+    "symptoms": "sneezing",
+    "reported_severity": 6,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_153",
+    "age": 41,
+    "gender": "Female",
+    "symptoms": "fever",
+    "reported_severity": 5,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_154",
+    "age": 54,
+    "gender": "Female",
+    "symptoms": "chest pain, loss of consciousness, weakness in right arm, minor injury with swelling",
+    "reported_severity": 2,
+    "past_history": "seasonal allergies",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_155",
+    "age": 65,
+    "gender": "Female",
+    "symptoms": "abdominal pain",
+    "reported_severity": 9,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_156",
+    "age": 64,
+    "gender": "Female",
+    "symptoms": "weakness in right arm, chest pain, moderate dehydration",
+    "reported_severity": 7,
+    "past_history": "seasonal allergies, diabetes",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_157",
+    "age": 52,
+    "gender": "Female",
+    "symptoms": "sore throat",
+    "reported_severity": 5,
+    "past_history": "diabetes, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_158",
+    "age": 79,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, headache",
+    "reported_severity": 8,
+    "past_history": "seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_159",
+    "age": 43,
+    "gender": "Female",
+    "symptoms": "abdominal pain, moderate dehydration, fever",
+    "reported_severity": 5,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_160",
+    "age": 7,
+    "gender": "Male",
+    "symptoms": "sneezing, minor cut",
+    "reported_severity": 5,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_161",
+    "age": 63,
+    "gender": "Female",
+    "symptoms": "minor cut, mild headache, seasonal allergies",
+    "reported_severity": 1,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_162",
+    "age": 26,
+    "gender": "Male",
+    "symptoms": "paralysis, loss of consciousness, minor injury with swelling",
+    "reported_severity": 3,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_163",
+    "age": 57,
+    "gender": "Male",
+    "symptoms": "fever, persistent cough",
+    "reported_severity": 7,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_164",
+    "age": 65,
+    "gender": "Male",
+    "symptoms": "runny nose",
+    "reported_severity": 9,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_165",
+    "age": 65,
+    "gender": "Female",
+    "symptoms": "runny nose, minor cut, mild headache",
+    "reported_severity": 8,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_166",
+    "age": 58,
+    "gender": "Female",
+    "symptoms": "persistent cough, minor injury with swelling, persistent vomiting",
+    "reported_severity": 3,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_167",
+    "age": 76,
+    "gender": "Female",
+    "symptoms": "headache, persistent cough, minor injury with swelling",
+    "reported_severity": 2,
+    "past_history": "stroke history, heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_168",
+    "age": 23,
+    "gender": "Male",
+    "symptoms": "abdominal pain, moderate dehydration",
+    "reported_severity": 2,
+    "past_history": "stroke history, stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_169",
+    "age": 83,
+    "gender": "Female",
+    "symptoms": "runny nose, mild headache",
+    "reported_severity": 4,
+    "past_history": "seasonal allergies, heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_170",
+    "age": 79,
+    "gender": "Male",
+    "symptoms": "mild headache, sore throat, runny nose",
+    "reported_severity": 3,
+    "past_history": "stroke history, diabetes",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_171",
+    "age": 27,
+    "gender": "Male",
+    "symptoms": "sore throat, runny nose",
+    "reported_severity": 1,
+    "past_history": "smoker, diabetes",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_172",
+    "age": 79,
+    "gender": "Female",
+    "symptoms": "chest pressure",
+    "reported_severity": 4,
+    "past_history": "smoker",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Respiratory distress requires urgent evaluation"
+  },
+  {
+    "id": "CASE_173",
+    "age": 73,
+    "gender": "Male",
+    "symptoms": "runny nose, sore throat",
+    "reported_severity": 7,
+    "past_history": "hypertension, seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_174",
+    "age": 29,
+    "gender": "Female",
+    "symptoms": "seasonal allergies, mild headache, sore throat, runny nose",
+    "reported_severity": 6,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_175",
+    "age": 15,
+    "gender": "Male",
+    "symptoms": "chest pressure, loss of consciousness",
+    "reported_severity": 3,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Possible stroke symptoms detected"
+  },
+  {
+    "id": "CASE_176",
+    "age": 27,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, abdominal pain, persistent cough",
+    "reported_severity": 10,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_177",
+    "age": 17,
+    "gender": "Male",
+    "symptoms": "loss of consciousness, weakness in right arm, allergic swelling",
+    "reported_severity": 3,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Possible stroke symptoms detected"
+  },
+  {
+    "id": "CASE_178",
+    "age": 24,
+    "gender": "Female",
+    "symptoms": "allergic swelling",
+    "reported_severity": 6,
+    "past_history": "smoker, seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_179",
+    "age": 67,
+    "gender": "Female",
+    "symptoms": "mild headache, sneezing",
+    "reported_severity": 2,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_180",
+    "age": 18,
+    "gender": "Male",
+    "symptoms": "minor cut, runny nose, sore throat",
+    "reported_severity": 8,
+    "past_history": "heart disease, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_181",
+    "age": 21,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, minor injury with swelling, persistent vomiting",
+    "reported_severity": 7,
+    "past_history": "heart disease, smoker",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_182",
+    "age": 12,
+    "gender": "Male",
+    "symptoms": "severe bleeding, weakness in right arm",
+    "reported_severity": 3,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Respiratory distress requires urgent evaluation"
+  },
+  {
+    "id": "CASE_183",
+    "age": 13,
+    "gender": "Male",
+    "symptoms": "persistent cough, minor injury with swelling",
+    "reported_severity": 10,
+    "past_history": "smoker, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_184",
+    "age": 58,
+    "gender": "Female",
+    "symptoms": "mild headache, runny nose, seasonal allergies, runny nose",
+    "reported_severity": 1,
+    "past_history": "diabetes, smoker",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_185",
+    "age": 78,
+    "gender": "Male",
+    "symptoms": "minor cut, sore throat, sneezing",
+    "reported_severity": 4,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_186",
+    "age": 12,
+    "gender": "Male",
+    "symptoms": "chest pressure, chest pain, shortness of breath",
+    "reported_severity": 3,
+    "past_history": "smoker, heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "respiratory risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_187",
+    "age": 71,
+    "gender": "Male",
+    "symptoms": "weakness in right arm, chest pain, loss of consciousness, seasonal allergies",
+    "reported_severity": 1,
+    "past_history": "asthma",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Possible stroke symptoms detected"
+  },
+  {
+    "id": "CASE_188",
+    "age": 23,
+    "gender": "Male",
+    "symptoms": "weakness in right arm",
+    "reported_severity": 5,
+    "past_history": "none, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_189",
+    "age": 64,
+    "gender": "Female",
+    "symptoms": "chest pain, severe bleeding, paralysis, sneezing",
+    "reported_severity": 1,
+    "past_history": "stroke history, none",
+    "risk_factors": [
+      "cardiac risk",
+      "stroke risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_190",
+    "age": 19,
+    "gender": "Female",
+    "symptoms": "minor cut, runny nose",
+    "reported_severity": 4,
+    "past_history": "none, hypertension",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_191",
+    "age": 36,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, abdominal pain",
+    "reported_severity": 4,
+    "past_history": "hypertension, smoker",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_192",
+    "age": 76,
+    "gender": "Female",
+    "symptoms": "headache, minor injury with swelling, abdominal pain",
+    "reported_severity": 2,
+    "past_history": "smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_193",
+    "age": 8,
+    "gender": "Male",
+    "symptoms": "abdominal pain, persistent vomiting, headache",
+    "reported_severity": 3,
+    "past_history": "seasonal allergies, diabetes",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_194",
+    "age": 37,
+    "gender": "Male",
+    "symptoms": "headache, persistent cough, abdominal pain, fever",
+    "reported_severity": 6,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_195",
+    "age": 56,
+    "gender": "Female",
+    "symptoms": "minor cut, sneezing",
+    "reported_severity": 8,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_196",
+    "age": 37,
+    "gender": "Female",
+    "symptoms": "minor cut, seasonal allergies, sore throat",
+    "reported_severity": 10,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_197",
+    "age": 64,
+    "gender": "Male",
+    "symptoms": "fever, persistent vomiting, headache, mild headache",
+    "reported_severity": 8,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_198",
+    "age": 43,
+    "gender": "Female",
+    "symptoms": "abdominal pain, moderate dehydration",
+    "reported_severity": 3,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_199",
+    "age": 19,
+    "gender": "Male",
+    "symptoms": "fever, headache",
+    "reported_severity": 9,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_200",
+    "age": 65,
+    "gender": "Female",
+    "symptoms": "allergic swelling, loss of consciousness",
+    "reported_severity": 8,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_201",
+    "age": 75,
+    "gender": "Male",
+    "symptoms": "headache",
+    "reported_severity": 1,
+    "past_history": "asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_202",
+    "age": 12,
+    "gender": "Female",
+    "symptoms": "runny nose, mild headache, sneezing",
+    "reported_severity": 4,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_203",
+    "age": 16,
+    "gender": "Male",
+    "symptoms": "moderate dehydration",
+    "reported_severity": 2,
+    "past_history": "none, diabetes",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_204",
+    "age": 53,
+    "gender": "Male",
+    "symptoms": "fever, headache",
+    "reported_severity": 2,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_205",
+    "age": 15,
+    "gender": "Female",
+    "symptoms": "chest pain",
+    "reported_severity": 8,
+    "past_history": "seasonal allergies, none",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_206",
+    "age": 47,
+    "gender": "Male",
+    "symptoms": "headache, minor injury with swelling, persistent vomiting",
+    "reported_severity": 9,
+    "past_history": "asthma, stroke history",
+    "risk_factors": [
+      "stroke risk",
+      "respiratory risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_207",
+    "age": 74,
+    "gender": "Female",
+    "symptoms": "sudden speech difficulty",
+    "reported_severity": 1,
+    "past_history": "heart disease, heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Possible stroke symptoms detected"
+  },
+  {
+    "id": "CASE_208",
+    "age": 28,
+    "gender": "Male",
+    "symptoms": "abdominal pain, persistent vomiting",
+    "reported_severity": 2,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_209",
+    "age": 14,
+    "gender": "Female",
+    "symptoms": "seasonal allergies, sneezing, runny nose",
+    "reported_severity": 10,
+    "past_history": "diabetes, asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_210",
+    "age": 73,
+    "gender": "Male",
+    "symptoms": "persistent cough",
+    "reported_severity": 4,
+    "past_history": "smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_211",
+    "age": 15,
+    "gender": "Female",
+    "symptoms": "shortness of breath, severe bleeding",
+    "reported_severity": 2,
+    "past_history": "seasonal allergies, diabetes",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Respiratory distress requires urgent evaluation"
+  },
+  {
+    "id": "CASE_212",
+    "age": 39,
+    "gender": "Female",
+    "symptoms": "sneezing",
+    "reported_severity": 8,
+    "past_history": "hypertension, diabetes",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_213",
+    "age": 58,
+    "gender": "Female",
+    "symptoms": "mild headache, sneezing, seasonal allergies, minor cut",
+    "reported_severity": 4,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_214",
+    "age": 51,
+    "gender": "Female",
+    "symptoms": "persistent cough, persistent vomiting, runny nose",
+    "reported_severity": 5,
+    "past_history": "asthma, asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_215",
+    "age": 30,
+    "gender": "Male",
+    "symptoms": "mild headache, sore throat, sneezing",
+    "reported_severity": 9,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_216",
+    "age": 25,
+    "gender": "Male",
+    "symptoms": "mild headache, runny nose, minor cut, sneezing",
+    "reported_severity": 8,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_217",
+    "age": 47,
+    "gender": "Female",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 9,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_218",
+    "age": 35,
+    "gender": "Male",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 3,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_219",
+    "age": 68,
+    "gender": "Male",
+    "symptoms": "shortness of breath",
+    "reported_severity": 8,
+    "past_history": "seasonal allergies",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Respiratory distress requires urgent evaluation"
+  },
+  {
+    "id": "CASE_220",
+    "age": 6,
+    "gender": "Male",
+    "symptoms": "sneezing, minor cut",
+    "reported_severity": 2,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_221",
+    "age": 52,
+    "gender": "Female",
+    "symptoms": "fever, abdominal pain, moderate dehydration",
+    "reported_severity": 8,
+    "past_history": "smoker, smoker",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_222",
+    "age": 54,
+    "gender": "Male",
+    "symptoms": "paralysis, severe bleeding, weakness in right arm",
+    "reported_severity": 8,
+    "past_history": "smoker, smoker",
+    "risk_factors": [],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_223",
+    "age": 44,
+    "gender": "Male",
+    "symptoms": "weakness in right arm",
+    "reported_severity": 3,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_224",
+    "age": 20,
+    "gender": "Male",
+    "symptoms": "minor cut, seasonal allergies",
+    "reported_severity": 3,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_225",
+    "age": 11,
+    "gender": "Male",
+    "symptoms": "paralysis, chest pressure, severe bleeding",
+    "reported_severity": 6,
+    "past_history": "hypertension, none",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_226",
+    "age": 33,
+    "gender": "Male",
+    "symptoms": "fever, minor injury with swelling",
+    "reported_severity": 6,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_227",
+    "age": 65,
+    "gender": "Male",
+    "symptoms": "runny nose, sneezing, mild headache",
+    "reported_severity": 3,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_228",
+    "age": 48,
+    "gender": "Male",
+    "symptoms": "headache",
+    "reported_severity": 1,
+    "past_history": "hypertension, smoker",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_229",
+    "age": 77,
+    "gender": "Male",
+    "symptoms": "mild headache, sore throat, sneezing",
+    "reported_severity": 8,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_230",
+    "age": 50,
+    "gender": "Female",
+    "symptoms": "persistent vomiting, fever, abdominal pain",
+    "reported_severity": 9,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_231",
+    "age": 40,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, headache, mild headache",
+    "reported_severity": 6,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_232",
+    "age": 17,
+    "gender": "Female",
+    "symptoms": "minor injury with swelling",
+    "reported_severity": 4,
+    "past_history": "seasonal allergies, hypertension",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_233",
+    "age": 45,
+    "gender": "Male",
+    "symptoms": "minor cut, runny nose",
+    "reported_severity": 2,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_234",
+    "age": 33,
+    "gender": "Female",
+    "symptoms": "allergic swelling, severe bleeding, paralysis",
+    "reported_severity": 6,
+    "past_history": "diabetes, asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Possible stroke symptoms detected"
+  },
+  {
+    "id": "CASE_235",
+    "age": 76,
+    "gender": "Female",
+    "symptoms": "abdominal pain",
+    "reported_severity": 4,
+    "past_history": "seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_236",
+    "age": 60,
+    "gender": "Male",
+    "symptoms": "fever",
+    "reported_severity": 5,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_237",
+    "age": 15,
+    "gender": "Female",
+    "symptoms": "minor cut, abdominal pain",
+    "reported_severity": 3,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_238",
+    "age": 50,
+    "gender": "Female",
+    "symptoms": "persistent vomiting, fever",
+    "reported_severity": 9,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_239",
+    "age": 22,
+    "gender": "Female",
+    "symptoms": "minor injury with swelling",
+    "reported_severity": 3,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_240",
+    "age": 12,
+    "gender": "Male",
+    "symptoms": "fever",
+    "reported_severity": 4,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_241",
+    "age": 73,
+    "gender": "Female",
+    "symptoms": "sore throat, minor cut",
+    "reported_severity": 2,
+    "past_history": "hypertension, asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_242",
+    "age": 84,
+    "gender": "Female",
+    "symptoms": "sneezing, sore throat, seasonal allergies, moderate dehydration",
+    "reported_severity": 1,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_243",
+    "age": 81,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, persistent cough, persistent vomiting, seasonal allergies",
+    "reported_severity": 5,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_244",
+    "age": 10,
+    "gender": "Female",
+    "symptoms": "runny nose",
+    "reported_severity": 4,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_245",
+    "age": 64,
+    "gender": "Male",
+    "symptoms": "moderate dehydration",
+    "reported_severity": 2,
+    "past_history": "heart disease, hypertension",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_246",
+    "age": 77,
+    "gender": "Female",
+    "symptoms": "abdominal pain",
+    "reported_severity": 4,
+    "past_history": "smoker, diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_247",
+    "age": 57,
+    "gender": "Female",
+    "symptoms": "seasonal allergies, mild headache",
+    "reported_severity": 8,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_248",
+    "age": 58,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, persistent cough",
+    "reported_severity": 2,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_249",
+    "age": 19,
+    "gender": "Male",
+    "symptoms": "runny nose, seasonal allergies, mild headache",
+    "reported_severity": 5,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_250",
+    "age": 20,
+    "gender": "Female",
+    "symptoms": "runny nose",
+    "reported_severity": 7,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_251",
+    "age": 12,
+    "gender": "Male",
+    "symptoms": "chest pressure, sudden speech difficulty",
+    "reported_severity": 1,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "cardiac risk",
+      "stroke risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_252",
+    "age": 59,
+    "gender": "Female",
+    "symptoms": "seasonal allergies",
+    "reported_severity": 7,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_253",
+    "age": 22,
+    "gender": "Male",
+    "symptoms": "weakness in right arm, chest pain, allergic swelling",
+    "reported_severity": 3,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_254",
+    "age": 11,
+    "gender": "Female",
+    "symptoms": "minor cut, sore throat, mild headache",
+    "reported_severity": 3,
+    "past_history": "heart disease, heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_255",
+    "age": 70,
+    "gender": "Female",
+    "symptoms": "sore throat",
+    "reported_severity": 2,
+    "past_history": "seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_256",
+    "age": 43,
+    "gender": "Female",
+    "symptoms": "mild headache, sneezing, minor cut",
+    "reported_severity": 5,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_257",
+    "age": 78,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, persistent cough",
+    "reported_severity": 8,
+    "past_history": "none, seasonal allergies",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_258",
+    "age": 12,
+    "gender": "Female",
+    "symptoms": "minor injury with swelling, runny nose",
+    "reported_severity": 1,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_259",
+    "age": 44,
+    "gender": "Female",
+    "symptoms": "sore throat, minor cut, runny nose",
+    "reported_severity": 4,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_260",
+    "age": 41,
+    "gender": "Male",
+    "symptoms": "persistent cough, persistent vomiting, headache",
+    "reported_severity": 9,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_261",
+    "age": 25,
+    "gender": "Male",
+    "symptoms": "persistent vomiting",
+    "reported_severity": 8,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_262",
+    "age": 63,
+    "gender": "Male",
+    "symptoms": "fever, persistent vomiting, persistent vomiting",
+    "reported_severity": 4,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_263",
+    "age": 71,
+    "gender": "Female",
+    "symptoms": "sneezing, mild headache",
+    "reported_severity": 7,
+    "past_history": "asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Common cold or seasonal allergy"
+  },
+  {
+    "id": "CASE_264",
+    "age": 30,
+    "gender": "Female",
+    "symptoms": "moderate dehydration, minor injury with swelling, headache",
+    "reported_severity": 2,
+    "past_history": "diabetes, none",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_265",
+    "age": 32,
+    "gender": "Female",
+    "symptoms": "minor cut",
+    "reported_severity": 3,
+    "past_history": "diabetes, none",
+    "risk_factors": [],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_266",
+    "age": 38,
+    "gender": "Female",
+    "symptoms": "minor cut, mild headache",
+    "reported_severity": 7,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_267",
+    "age": 48,
+    "gender": "Male",
+    "symptoms": "moderate dehydration, persistent cough",
+    "reported_severity": 7,
+    "past_history": "stroke history, diabetes",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_268",
+    "age": 28,
+    "gender": "Male",
+    "symptoms": "chest pressure, loss of consciousness",
+    "reported_severity": 7,
+    "past_history": "none",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_269",
+    "age": 24,
+    "gender": "Male",
+    "symptoms": "loss of consciousness",
+    "reported_severity": 5,
+    "past_history": "heart disease",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_270",
+    "age": 65,
+    "gender": "Male",
+    "symptoms": "persistent vomiting, fever",
+    "reported_severity": 4,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_271",
+    "age": 65,
+    "gender": "Male",
+    "symptoms": "moderate dehydration, headache",
+    "reported_severity": 8,
+    "past_history": "stroke history, hypertension",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_272",
+    "age": 45,
+    "gender": "Male",
+    "symptoms": "shortness of breath, allergic swelling",
+    "reported_severity": 5,
+    "past_history": "asthma, smoker",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_273",
+    "age": 18,
+    "gender": "Female",
+    "symptoms": "persistent cough, headache, moderate dehydration, seasonal allergies",
+    "reported_severity": 6,
+    "past_history": "seasonal allergies, hypertension",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_274",
+    "age": 9,
+    "gender": "Female",
+    "symptoms": "minor cut, sore throat",
+    "reported_severity": 4,
+    "past_history": "smoker, none",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_275",
+    "age": 23,
+    "gender": "Female",
+    "symptoms": "mild headache, runny nose, minor cut",
+    "reported_severity": 7,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_276",
+    "age": 64,
+    "gender": "Male",
+    "symptoms": "seasonal allergies, sore throat",
+    "reported_severity": 7,
+    "past_history": "stroke history, diabetes",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 1,
+    "triage_category": "Normal",
+    "reason": "Minor viral symptoms"
+  },
+  {
+    "id": "CASE_277",
+    "age": 60,
+    "gender": "Female",
+    "symptoms": "sore throat",
+    "reported_severity": 7,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_278",
+    "age": 80,
+    "gender": "Female",
+    "symptoms": "persistent cough, moderate dehydration, seasonal allergies",
+    "reported_severity": 2,
+    "past_history": "smoker",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_279",
+    "age": 5,
+    "gender": "Male",
+    "symptoms": "moderate dehydration, abdominal pain, fever",
+    "reported_severity": 4,
+    "past_history": "none",
+    "risk_factors": [],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_280",
+    "age": 40,
+    "gender": "Male",
+    "symptoms": "minor cut",
+    "reported_severity": 6,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_281",
+    "age": 50,
+    "gender": "Male",
+    "symptoms": "minor injury with swelling, persistent cough, persistent vomiting",
+    "reported_severity": 5,
+    "past_history": "smoker",
+    "risk_factors": [],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_282",
+    "age": 53,
+    "gender": "Female",
+    "symptoms": "fever, minor injury with swelling",
+    "reported_severity": 10,
+    "past_history": "hypertension",
+    "risk_factors": [],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_283",
+    "age": 29,
+    "gender": "Female",
+    "symptoms": "persistent cough, moderate dehydration, minor cut",
+    "reported_severity": 9,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Moderate pain/fever with stable vitals"
+  },
+  {
+    "id": "CASE_284",
+    "age": 44,
+    "gender": "Male",
+    "symptoms": "loss of consciousness, shortness of breath, sore throat",
+    "reported_severity": 6,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 8,
+    "triage_category": "Emergency",
+    "reason": "Signs of systemic compromise"
+  },
+  {
+    "id": "CASE_285",
+    "age": 38,
+    "gender": "Male",
+    "symptoms": "abdominal pain",
+    "reported_severity": 7,
+    "past_history": "seasonal allergies, stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_286",
+    "age": 67,
+    "gender": "Female",
+    "symptoms": "minor cut, sneezing, seasonal allergies, runny nose",
+    "reported_severity": 4,
+    "past_history": "stroke history, stroke history",
+    "risk_factors": [
+      "elderly",
+      "stroke risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Low-risk localized minor injury"
+  },
+  {
+    "id": "CASE_287",
+    "age": 85,
+    "gender": "Male",
+    "symptoms": "chest pain, weakness in right arm, shortness of breath, runny nose",
+    "reported_severity": 3,
+    "past_history": "smoker, seasonal allergies",
+    "risk_factors": [
+      "cardiac risk",
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_288",
+    "age": 10,
+    "gender": "Male",
+    "symptoms": "moderate dehydration",
+    "reported_severity": 2,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 5,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_289",
+    "age": 20,
+    "gender": "Female",
+    "symptoms": "mild headache",
+    "reported_severity": 6,
+    "past_history": "seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_290",
+    "age": 77,
+    "gender": "Male",
+    "symptoms": "persistent vomiting",
+    "reported_severity": 4,
+    "past_history": "none",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_291",
+    "age": 23,
+    "gender": "Female",
+    "symptoms": "minor cut, seasonal allergies, sneezing",
+    "reported_severity": 8,
+    "past_history": "stroke history",
+    "risk_factors": [
+      "stroke risk"
+    ],
+    "triage_score": 2,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_292",
+    "age": 18,
+    "gender": "Male",
+    "symptoms": "shortness of breath, chest pain",
+    "reported_severity": 2,
+    "past_history": "hypertension",
+    "risk_factors": [
+      "cardiac risk",
+      "respiratory risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Severe allergic reaction risk"
+  },
+  {
+    "id": "CASE_293",
+    "age": 42,
+    "gender": "Female",
+    "symptoms": "persistent vomiting",
+    "reported_severity": 3,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_294",
+    "age": 36,
+    "gender": "Female",
+    "symptoms": "shortness of breath, chest pressure, abdominal pain",
+    "reported_severity": 6,
+    "past_history": "none",
+    "risk_factors": [
+      "cardiac risk",
+      "respiratory risk"
+    ],
+    "triage_score": 10,
+    "triage_category": "Emergency",
+    "reason": "Possible stroke symptoms detected"
+  },
+  {
+    "id": "CASE_295",
+    "age": 11,
+    "gender": "Male",
+    "symptoms": "runny nose, sore throat",
+    "reported_severity": 6,
+    "past_history": "diabetes, seasonal allergies",
+    "risk_factors": [],
+    "triage_score": 3,
+    "triage_category": "Normal",
+    "reason": "Stable chronic condition with minor flare-up"
+  },
+  {
+    "id": "CASE_296",
+    "age": 19,
+    "gender": "Male",
+    "symptoms": "persistent vomiting, minor injury with swelling, abdominal pain",
+    "reported_severity": 9,
+    "past_history": "diabetes",
+    "risk_factors": [],
+    "triage_score": 4,
+    "triage_category": "Moderate",
+    "reason": "Symptom progression requires clinical review"
+  },
+  {
+    "id": "CASE_297",
+    "age": 18,
+    "gender": "Female",
+    "symptoms": "chest pain",
+    "reported_severity": 8,
+    "past_history": "diabetes",
+    "risk_factors": [
+      "cardiac risk"
+    ],
+    "triage_score": 9,
+    "triage_category": "Emergency",
+    "reason": "Chest pain with potential cardiac risk"
+  },
+  {
+    "id": "CASE_298",
+    "age": 73,
+    "gender": "Female",
+    "symptoms": "headache, moderate dehydration, persistent vomiting, abdominal pain",
+    "reported_severity": 1,
+    "past_history": "diabetes, diabetes",
+    "risk_factors": [
+      "elderly"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Localized injury with significant discomfort"
+  },
+  {
+    "id": "CASE_299",
+    "age": 16,
+    "gender": "Male",
+    "symptoms": "persistent cough, minor injury with swelling",
+    "reported_severity": 8,
+    "past_history": "asthma",
+    "risk_factors": [
+      "respiratory risk"
+    ],
+    "triage_score": 6,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  },
+  {
+    "id": "CASE_300",
+    "age": 66,
+    "gender": "Female",
+    "symptoms": "minor injury with swelling, persistent cough",
+    "reported_severity": 8,
+    "past_history": "asthma",
+    "risk_factors": [
+      "elderly",
+      "respiratory risk"
+    ],
+    "triage_score": 7,
+    "triage_category": "Moderate",
+    "reason": "Infection symptoms requiring monitoring"
+  }
+]

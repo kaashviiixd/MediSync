@@ -1,0 +1,191 @@
+[
+  {
+    "id": "TC-003",
+    "description": "Hidden cardiac risk despite low severity",
+    "patientProfile": {
+      "name": "Robert Hall",
+      "age": 68,
+      "gender": "Male",
+      "history": "Coronary artery disease, hypertension"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What symptoms are you experiencing today?" },
+      { "sender": "user", "text": "I feel a slight tightness in my chest and a bit of sweating." },
+      { "sender": "ai", "text": "How severe is the discomfort from 1-10?" },
+      { "sender": "user", "text": "Maybe 3. It's manageable." }
+    ],
+    "expectedOutput": {
+      "riskLevel": "HIGH",
+      "redFlags": ["Chest tightness", "Cardiac history", "Sweating", "Age >65"],
+      "recommendation": "Immediate ER evaluation for possible cardiac event"
+    }
+  },
+  {
+    "id": "TC-004",
+    "description": "Stroke symptoms but patient underestimates severity",
+    "patientProfile": {
+      "name": "Linda Perez",
+      "age": 70,
+      "gender": "Female",
+      "history": "Hypertension"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What symptoms are you experiencing?" },
+      { "sender": "user", "text": "My left arm feels weak and I'm having trouble speaking." },
+      { "sender": "ai", "text": "How severe would you rate this?" },
+      { "sender": "user", "text": "Around 3, maybe I'm just tired." }
+    ],
+    "expectedOutput": {
+      "riskLevel": "HIGH",
+      "redFlags": ["Speech difficulty", "Unilateral weakness", "Stroke risk age"],
+      "recommendation": "Emergency stroke protocol / immediate hospital care"
+    }
+  },
+  {
+    "id": "TC-005",
+    "description": "Severe pain but low medical risk",
+    "patientProfile": {
+      "name": "Kevin Brooks",
+      "age": 22,
+      "gender": "Male",
+      "history": "None"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What seems to be the problem?" },
+      { "sender": "user", "text": "I twisted my ankle playing football." },
+      { "sender": "ai", "text": "How severe is the pain?" },
+      { "sender": "user", "text": "It's like an 8 out of 10." }
+    ],
+    "expectedOutput": {
+      "riskLevel": "MODERATE",
+      "redFlags": ["Possible sprain"],
+      "recommendation": "Orthopedic check or rest, ice, compression"
+    }
+  },
+  {
+    "id": "TC-006",
+    "description": "Respiratory distress with asthma history",
+    "patientProfile": {
+      "name": "Sophia Lee",
+      "age": 45,
+      "gender": "Female",
+      "history": "Chronic asthma"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What symptoms are you experiencing?" },
+      { "sender": "user", "text": "I feel short of breath and wheezing." },
+      { "sender": "ai", "text": "Severity from 1-10?" },
+      { "sender": "user", "text": "Maybe a 4." }
+    ],
+    "expectedOutput": {
+      "riskLevel": "HIGH",
+      "redFlags": ["Shortness of breath", "Asthma history", "Wheezing"],
+      "recommendation": "Immediate respiratory evaluation"
+    }
+  },
+  {
+    "id": "TC-007",
+    "description": "Moderate infection risk",
+    "patientProfile": {
+      "name": "Daniel Kim",
+      "age": 35,
+      "gender": "Male",
+      "history": "None"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What symptoms do you have?" },
+      { "sender": "user", "text": "High fever and body aches since yesterday." },
+      { "sender": "ai", "text": "Severity scale?" },
+      { "sender": "user", "text": "Around 6." }
+    ],
+    "expectedOutput": {
+      "riskLevel": "MODERATE",
+      "redFlags": ["Fever", "Possible infection"],
+      "recommendation": "Clinical consultation and lab tests"
+    }
+  },
+  {
+    "id": "TC-008",
+    "description": "Diabetic patient with blurred vision",
+    "patientProfile": {
+      "name": "Maria Gonzales",
+      "age": 58,
+      "gender": "Female",
+      "history": "Type 2 diabetes"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What symptoms are you experiencing?" },
+      { "sender": "user", "text": "My vision is blurry and I feel dizzy." },
+      { "sender": "ai", "text": "Severity scale?" },
+      { "sender": "user", "text": "4 maybe." }
+    ],
+    "expectedOutput": {
+      "riskLevel": "HIGH",
+      "redFlags": ["Blurred vision", "Diabetes", "Dizziness"],
+      "recommendation": "Urgent blood glucose and neurological evaluation"
+    }
+  },
+  {
+    "id": "TC-009",
+    "description": "Severe headache with neurological risk",
+    "patientProfile": {
+      "name": "James Miller",
+      "age": 60,
+      "gender": "Male",
+      "history": "Hypertension"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "Tell me your symptoms." },
+      { "sender": "user", "text": "Sudden severe headache and nausea." },
+      { "sender": "ai", "text": "Severity?" },
+      { "sender": "user", "text": "8." }
+    ],
+    "expectedOutput": {
+      "riskLevel": "HIGH",
+      "redFlags": ["Sudden headache", "Hypertension", "Neurological risk"],
+      "recommendation": "Emergency evaluation for possible hemorrhage"
+    }
+  },
+  {
+    "id": "TC-010",
+    "description": "Mild symptoms but elderly risk",
+    "patientProfile": {
+      "name": "George Wilson",
+      "age": 78,
+      "gender": "Male",
+      "history": "Heart failure"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What symptoms are you experiencing?" },
+      { "sender": "user", "text": "Just feeling unusually tired and breathless." },
+      { "sender": "ai", "text": "Severity scale?" },
+      { "sender": "user", "text": "3" }
+    ],
+    "expectedOutput": {
+      "riskLevel": "HIGH",
+      "redFlags": ["Elderly", "Heart failure", "Shortness of breath"],
+      "recommendation": "Immediate cardiac evaluation"
+    }
+  },
+  {
+    "id": "TC-011",
+    "description": "Minor allergy reaction",
+    "patientProfile": {
+      "name": "Emily Clark",
+      "age": 26,
+      "gender": "Female",
+      "history": "Seasonal allergies"
+    },
+    "chatLog": [
+      { "sender": "ai", "text": "What symptoms do you have?" },
+      { "sender": "user", "text": "Sneezing and itchy eyes." },
+      { "sender": "ai", "text": "Severity?" },
+      { "sender": "user", "text": "7" }
+    ],
+    "expectedOutput": {
+      "riskLevel": "LOW",
+      "redFlags": ["Allergic symptoms"],
+      "recommendation": "Antihistamines and rest"
+    }
+  }
+]

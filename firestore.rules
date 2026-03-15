@@ -1,0 +1,42 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Helper function to check if user is accessing their own data
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Health Readings Collection
+    match /health_readings/{readingId} {
+      // Users can only create readings where they are the owner
+      allow create: if isAuthenticated() && request.resource.data.uid == request.auth.uid;
+      // Users can only read, update, or delete their own readings
+      allow read, update, delete: if isAuthenticated() && resource.data.uid == request.auth.uid;
+    }
+
+    // Doctors Collection
+    match /doctors/{doctorId} {
+      allow read: if true; // Public list of doctors
+      allow write: if isAuthenticated() && request.auth.token.role == 'admin';
+    }
+
+    // Appointments Collection
+    match /appointments/{appointmentId} {
+      allow read, write: if isAuthenticated() && 
+        (resource.data.patientUid == request.auth.uid || resource.data.doctorUid == request.auth.uid);
+      allow create: if isAuthenticated();
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1773385540743",
+    "name": "Ishita Agarwal",
+    "email": "aishita38@gmail.com",
+    "password": "$2b$10$hdHNTFJYKOnIVVNznVpggjsE7B.",
+    "createdAt": "2026-03-13T07:05:40.743Z",
+    "googleId": "Ot2oDiCGjedDA4nyFcFCLIU90v23",
+    "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocKOGj0WjMgZ4vctfyLhGY6WFBXeed-KHOBe_-EeVkRfDeI6J7cr=s96-c"
+  },
+  {
+    "id": "1773391934003",
+    "name": "kaashvi",
+    "email": "kaashvi.gopal10@gmail.com",
+    "googleId": "RApGUhptnmWeZF4IHSFEyRnkta33",
+    "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocL1CYdqHzs0TDkbLx8zj2KiC0nX4i-swrNgORGZHHINltSLfQ=s96-c",
+    "createdAt": "2026-03-13T08:52:14.003Z"
+  }
+]

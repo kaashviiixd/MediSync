@@ -1,0 +1,156 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(uuid())
+  name          String
+  email         String    @unique
+  password      String
+  role          String    @default("patient") // patient, doctor, admin
+  phone         String?
+  profile_photo String?
+  createdAt     DateTime  @default(now())
+  
+  // Relations
+  doctorProfile DoctorProfile?
+  appointments  Appointment[] @relation("PatientAppointments")
+  doctorApps    Appointment[] @relation("DoctorAppointments")
+  chatHistories ChatHistory[]
+  documents     Document[]
+  profiles      Profile[]
+  
+  // New Jitsi Relations
+  doctorMeetings   Meeting[] @relation("DoctorMeetings")
+  patientMeetings  Meeting[] @relation("PatientMeetings")
+  doctorPrescriptions Prescription[] @relation("DoctorPrescriptions")
+  patientPrescriptions Prescription[] @relation("PatientPrescriptions")
+  notifications        Notification[]
+}
+
+model DoctorProfile {
+  id                  String   @id @default(uuid())
+  userId              String   @unique
+  user                User     @relation(fields: [userId], references: [id])
+  specialization      String
+  hospital            String?
+  experience          Int      @default(0)
+  consultation_fee    Float    @default(0.0)
+  available_days      String?  // Store as comma-separated or JSON string
+  available_time_slots String? // Store as JSON string
+}
+
+model Appointment {
+  id                 String   @id @default(uuid())
+  patientId          String
+  doctorId           String
+  patient            User     @relation("PatientAppointments", fields: [patientId], references: [id])
+  doctor             User     @relation("DoctorAppointments", fields: [doctorId], references: [id])
+  profileId          String?
+  profile            Profile? @relation(fields: [profileId], references: [id])
+  patient_name       String?
+  appointment_date   String
+  appointment_time   String
+  status             String   @default("pending") // pending, confirmed, completed, cancelled
+  symptoms_summary   String?
+  ai_generated_summary String?
+  severity_score       Int?
+  triage_category      String?
+  medical_records      String?  // JSON string
+  payment_id           String?
+  createdAt            DateTime @default(now())
+  
+  meetings             Meeting[]
+}
+
+model Profile {
+  id           String        @id @default(uuid())
+  userId       String
+  user         User          @relation(fields: [userId], references: [id])
+  name         String
+  relation     String?
+  dob          String?
+  gender       String?
+  color        String?
+  appointments Appointment[]
+  createdAt    DateTime      @default(now())
+
+  @@unique([userId, name])
+}
+
+model ChatHistory {
+  id                String   @id @default(uuid())
+  patientId         String
+  patient           User     @relation(fields: [patientId], references: [id])
+  message           String
+  sender            String   // user, ai
+  timestamp         DateTime @default(now())
+  extracted_insights String?
+}
+
+model Document {
+  id            String   @id @default(uuid())
+  patientId     String
+  patient       User     @relation(fields: [patientId], references: [id])
+  file_url      String
+  name          String
+  document_type String?
+  upload_date   DateTime @default(now())
+}
+
+// Medical Record (Optional separate table if needed, otherwise Document stores them)
+model MedicalRecord {
+  id                 String   @id @default(uuid())
+  patientId          String
+  diagnosis_summary  String?
+  prescription       String?
+  createdAt          DateTime @default(now())
+}
+model Meeting {
+  id             String    @id @default(uuid())
+  roomId         String    @unique
+  appointmentId  String?
+  appointment    Appointment? @relation(fields: [appointmentId], references: [id])
+  doctorId       String
+  doctor         User      @relation("DoctorMeetings", fields: [doctorId], references: [id])
+  patientId      String
+  patient        User      @relation("PatientMeetings", fields: [patientId], references: [id])
+  status         String    @default("waiting") // waiting, active, completed
+  notes          String?
+  started_at     DateTime?
+  ended_at       DateTime?
+  createdAt      DateTime  @default(now())
+}
+
+model Prescription {
+  id             String    @id @default(uuid())
+  meetingId      String?
+  doctorId       String
+  doctor         User      @relation("DoctorPrescriptions", fields: [doctorId], references: [id])
+  patientId      String
+  patient        User      @relation("PatientPrescriptions", fields: [patientId], references: [id])
+  diagnosis      String?
+  medications    String?   // Store as JSON string
+  follow_up_date String?
+  notes          String?
+  pdf_url        String?
+  sent_at        DateTime  @default(now())
+}
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  type      String   // appointment_booked, payment_success, etc.
+  title     String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
